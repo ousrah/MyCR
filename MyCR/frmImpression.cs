@@ -13,15 +13,16 @@ namespace MyCR
     public partial class frmImpression : Form
     {
         ReportClass cr;
-
+        string filtre;
         public frmImpression()
         {
             InitializeComponent();
         }
 
-        public frmImpression(ReportClass cr)
+        public frmImpression(ReportClass cr, string filtre="")
         {
             this.cr = cr;
+            this.filtre = filtre;
             InitializeComponent();
         }
 
@@ -31,6 +32,7 @@ namespace MyCR
         {
             // TODO: cette ligne de code charge les données dans la table 'librairieDataSet.OUVRAGE'. Vous pouvez la déplacer ou la supprimer selon les besoins.
              crv.ReportSource = cr;
+               crv.SelectionFormula = filtre;
         }
     }
 }

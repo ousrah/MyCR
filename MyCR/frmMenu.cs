@@ -32,5 +32,17 @@ namespace MyCR
             frmEcrivains f = new frmEcrivains();
             f.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmEditeurs f = new frmEditeurs();
+            f.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            frmClassifications f = new frmClassifications();
+            f.ShowDialog();
+        }
     }
 }

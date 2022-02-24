@@ -51,6 +51,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmClassifications.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassifications.Designer.cs">
+      <DependentUpon>frmClassifications.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditeurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditeurs.Designer.cs">
+      <DependentUpon>frmEditeurs.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmImpression.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +92,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>librairieDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="lstClassifications.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lstClassifications.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="lstEcrivains.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>lstEcrivains.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="lstEditeur.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>lstEditeur.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="lstOuvrages.cs">
@@ -94,6 +118,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmClassifications.resx">
+      <DependentUpon>frmClassifications.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditeurs.resx">
+      <DependentUpon>frmEditeurs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmImpression.resx">
       <DependentUpon>frmImpression.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,9 +136,17 @@
     <EmbeddedResource Include="frmOuvages.resx">
       <DependentUpon>frmOuvages.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lstClassifications.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lstClassifications.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="lstEcrivains.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>lstEcrivains.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lstEditeur.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>lstEditeur.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="lstOuvrages.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
