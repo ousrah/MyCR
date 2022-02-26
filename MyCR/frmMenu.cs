@@ -44,5 +44,29 @@ namespace MyCR
             frmClassifications f = new frmClassifications();
             f.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            lstOuvragesParClassification cr = new lstOuvragesParClassification();
+            cr.SetDatabaseLogon("sa", "P@ssw0rd");
+            frmImpression f = new frmImpression(cr);
+            f.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            GraphNbOuvragesParclassification cr = new GraphNbOuvragesParclassification();
+            cr.SetDatabaseLogon("sa", "P@ssw0rd");
+            frmImpression f = new frmImpression(cr);
+            f.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+           nbOuvragesParEditeur cr = new nbOuvragesParEditeur();
+            cr.SetDatabaseLogon("sa", "P@ssw0rd");
+            frmImpression f = new frmImpression(cr);
+            f.ShowDialog();
+        }
     }
 }
